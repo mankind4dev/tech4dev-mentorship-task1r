@@ -17,12 +17,11 @@ function App() {
     <>
       <Header />
       <Routes>
-      <Route exact path='/' element={<Home />} />
+        <Route exact path="/" element={<Retail />} />
         <Route exact path="/aboutUs" element={<AboutUs />} />
         <Route exact path="/campains" element={<Campains />} />
         <Route exact path="/corporate" element={<Corporate />} />
         <Route exact path="/covid19" element={<Covid19 />} />
-        <Route exact path="/retail" element={<Retail />} />
         <Route exact path="/sme" element={<Sme />} />
       </Routes>
       <Footer />

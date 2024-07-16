@@ -9,10 +9,11 @@ import {
 } from "react-icons/fa";
 import { integrity } from "../assets/index";
 import { glance, ourService, results, services } from ".";
+import BestResult from "../components/BestResult";
 
 export default function Retail({ service }) {
   return (
-    <section>
+    <>
       <div className="dream">
         <div className="hero">
           <div className="hero-text">
@@ -73,6 +74,11 @@ export default function Retail({ service }) {
         <p className="">business partners</p>
         <div className="logo">
           <img src={integrity} alt="sponsor" />
+          <img src={integrity} alt="sponsor" />
+          <img src={integrity} alt="sponsor" />
+          <img src={integrity} alt="sponsor" />
+          <img src={integrity} alt="sponsor" />
+          <img src={integrity} alt="sponsor" />
         </div>
       </div>
       <div className="ipdc">
@@ -107,14 +113,7 @@ export default function Retail({ service }) {
           ))}
         </div>
       </div>
-      <div className="bestResult">
-        <h3>our best result for the year</h3>
-        {results.map((result, index) => (
-            <div className="" key='index'>
-                {result.title}
-            </div>
-        ))}
-      </div>
-    </section>
+      <BestResult />
+    </>
   );
 }

@@ -7,7 +7,6 @@
 body {
   background-color: whitesmoke;
   font-family: sans-serif;
-
 }
 
 .nav {
@@ -29,6 +28,7 @@ body {
 
 .navs a {
   font-weight: 300;
+  color: #3e3e3e;
   margin: 1rem;
   list-style-type: none;
   text-decoration: none;
@@ -61,50 +61,51 @@ body {
   cursor: pointer;
 }
 
-.search-service button:hover{
+.search-service button:hover {
   text-decoration: underline;
 }
 
-.dream{
-  display: flex;
+.dream {
   width: 100%;
+  display: flex;
 }
 
-.dream .hero{
+.dream .hero {
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  margin: 0 4rem ;
+  margin: 0 4rem;
   margin-top: 4rem;
 }
 
-.hero .hero-text{
+.hero .hero-text {
   width: 40%;
   margin-bottom: 1rem;
 }
 
-.hero .hero-text span{
+.hero .hero-text span {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.hero .hero-text p{
+.hero .hero-text p {
   color: rgb(71, 73, 74);
   font-size: 1.5rem;
 }
 
-.hero .buttons{
+.hero .buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1rem;
 }
 
-.hero .buttons .btn1{
-  background-color:rgb(114, 7, 7);
+.hero .buttons .btn1 {
+  background-color: rgb(114, 7, 7);
   color: papayawhip;
   font-size: 1.5rem;
   padding: 1rem;
@@ -113,8 +114,8 @@ body {
   border: none;
   cursor: pointer;
 }
-.hero .buttons .btn2{
-  background-color:whitesmoke;
+.hero .buttons .btn2 {
+  background-color: whitesmoke;
   color: rgb(114, 7, 7);
   font-size: 1.5rem;
   padding: 1rem;
@@ -124,36 +125,39 @@ body {
   cursor: pointer;
 }
 
-.media{
+.media {
   display: flex;
   margin-top: 5rem;
-
 }
 
-.media .call{
-  
+.media .call {
 }
 
-.media .social-media{
+.media .social-media {
   display: flex;
   margin-right: 1rem;
   font-size: 1.5rem;
 }
 
-.media a{
+.media a {
   display: flex;
   margin-right: 1rem;
 }
-.hero-image{
+
+.media a:hover {
+  transform: scale(120%);
+  transition: all 0.3s;
+}
+.hero-image {
+  flex: 1;
   width: 60%;
-  
 }
 
-.hero-image img{
+.hero-image img {
   width: 100%;
 }
 
-.creating{
+.creating {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,94 +166,108 @@ body {
   text-align: center;
 }
 
-.creating span{
+.creating span {
   font-size: 2rem;
   font-weight: 600;
-
 }
 
-.creating p{
+.creating p {
   display: flex;
   text-align: center;
   margin: 0px 30rem;
 }
 
-.service{
+.service {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  flex-flow:column wrap;
+  flex-flow: column wrap;
   gap: 2rem 1rem;
   margin: 5rem;
 }
 
-.service-item{
+.service-item {
   max-width: 200px;
 }
 
-.service img{
+.service img {
   width: 50px;
   height: 50px;
   margin-bottom: 0.5rem;
 }
 
-.service h2{
+.service h2 {
   margin-bottom: 0.5rem;
 }
 
-.service-item p{
+.service-item p {
   margin-bottom: 0.5rem;
 }
 
-.business{
+.business {
   width: 100%;
-  height: 400px;
-  background-color:rgb(71, 73, 74);
+  min-height: 400px;
+  background-color: rgb(71, 73, 74);
 }
 
-.business p{
+.business p {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
   padding: 4rem;
 }
 
-.logo img{
+.logo img {
   width: 200px;
-} 
+  margin: 0 1rem;
+}
 
-.ipdc{
+.ipdc {
   width: 100%;
   max-height: 400px;
   display: flex;
 }
-
-.glance{
-  padding: 4rem;
-  align-items: center;
-  justify-content: center;
-} 
-
-.glance h3{
-  font-size: 40px;
-  text-transform: uppercase;
+.ipdc img {
+  display: flex;
+  flex: 1;
 }
 
-.glance p{
+.glance {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem;
+}
+
+.glance h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+.glance p {
   font-size: 20px;
   max-width: 60%;
   margin-bottom: 1.5rem;
 }
 
-.glance span{
+.glance span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 3rem 0;
+
   color: pink;
   gap: 1rem;
 }
 
-.ourService{
+.glance svg:hover {
+  transform: scale(150%);
+  transition: all 0.3s;
+}
+
+.ourService {
   width: 100%;
   height: 200px;
   text-align: center;
@@ -257,44 +275,121 @@ body {
   position: relative;
 }
 
-.ourService h2{
+.ourService h2 {
   font-size: 27px;
 }
 
-.serviceImage{
+.serviceImage {
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
   margin: 2rem;
 }
 
-.serviceImage img{
+.serviceImage img {
   width: 250px;
   height: 250px;
   border-radius: 7px;
 }
 
-.serviceImage img:hover{
+.serviceImage img:hover {
   transform: scale(1.1);
   transition: all 0.3s;
 }
 
-.serviceImage figcaption{
+.serviceImage figcaption {
   display: flex;
   text-transform: uppercase;
   gap: 1rem;
 }
 
-.serviceImage svg{
-  color:brown;
+.serviceImage svg {
+  color: brown;
   background-color: aqua;
   border-radius: 200%;
   padding: 3px;
 }
 
-.serviceImage span:hover{
-  transform: scaleX(120%);
+.serviceImage span:hover {
+  transform: scale(120%);
   transition: all 0.3s;
 }
 
+.footers {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  max-height: 400px;
+  background-color: aqua;
+  padding: 2rem;
+}
 
+.footer-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-about h2 {
+  flex-wrap: nowrap;
+}
+
+.footer-about p {
+  width: 60%;
+  margin: 1rem 0;
+}
+
+.footer-about span {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-product a {
+  display: flex;
+  text-decoration: none;
+  margin: 1rem 0 0 0;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.footer-product a:hover {
+  text-decoration: underline;
+}
+
+.footer-get {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-get a {
+  display: flex;
+  text-decoration: none;
+  margin: 1rem 0 0 0;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.footer-get a:hover {
+  text-decoration: underline;
+}
+
+.footer-ipdc {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-ipdc a {
+  display: flex;
+  text-decoration: none;
+  margin: 1rem 0 0 0;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.footer-ipdc a:hover {
+  text-decoration: underline;
+}
