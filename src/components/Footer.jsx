@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer-about">
           <h2>About the company</h2>
           <p>
-            Learn to growth and change and you will be a succcess. Microsoft
+            Learn to growth and change and you <br />will be a succcess. Microsoft
             patch
           </p>
           <span>

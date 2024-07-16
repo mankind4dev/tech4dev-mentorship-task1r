@@ -10,7 +10,7 @@ export default function Header() {
       <div className="nav">
         <img src={Logo} alt="app logo" height={"50px"} width={"50px"} />
         <div className="navs">
-          <Link to="retail">Retal</Link>
+          <Link to="/">Retal</Link>
           <Link to="sme">SME</Link>
           <Link to="corporate">Corporate</Link>
           <Link to="aboutUs">About Us</Link>
@@ -23,6 +23,7 @@ export default function Header() {
           </div>
           <button className="service">iSERVICE</button>
         </div>
+        
       </div>
     </>
   );
