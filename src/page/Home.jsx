@@ -7,7 +7,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import { integrity } from "../assets/index";
+import { logo } from "../assets/index";
 import { glance, ourService, results, services } from ".";
 import BestResult from "../components/BestResult";
 
@@ -82,7 +82,7 @@ export default function Home({ service }) {
         </div>
       </div>
       <div className="ipdc">
-        <img src={integrity} alt="ipdc" />
+        <img src={logo} alt="ipdc" />
         <div className="glance">
           <h3>ipdc at a glance</h3>
           <p>{glance.title}</p>

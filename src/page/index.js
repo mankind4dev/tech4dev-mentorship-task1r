@@ -1,9 +1,9 @@
 import { FaArrowRight } from "react-icons/fa";
-import { integrity } from "../assets";
+import { logo } from "../assets";
 
 export const services = [
   {
-    icon: integrity,
+    icon: logo,
     title: "Integrity",
     descrpition:
       "Displaying the highest level of integrity in the way we conduct our business",
@@ -58,19 +58,19 @@ export const glance = {
 
 export const ourService = [
   {
-    img: integrity,
+    img: logo,
     title: "ipdc saving schames",
   },
   {
-    img: integrity,
+    img: logo,
     title: "ipdc personal loan",
   },
   {
-    img: integrity,
+    img: logo,
     title: "ipdc deposite schemes",
   },
   {
-    img: integrity,
+    img: logo,
     title: "ipdc auto loan",
   },
 ];

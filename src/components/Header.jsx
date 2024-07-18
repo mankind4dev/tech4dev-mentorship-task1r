@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Logo } from "../assets";
+import { logo } from "../assets";
 import { FaSearch } from "react-icons/fa";
 
 export default function Header() {
@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
       <div className="nav">
-        <img src={Logo} alt="app logo" height={"50px"} width={"50px"} />
+        <img src={logo} alt="app logo" height={"50px"} width={"50px"} />
         <div className="navs">
           <Link to="/">Retal</Link>
           <Link to="sme">SME</Link>

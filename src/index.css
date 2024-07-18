@@ -82,7 +82,7 @@ body {
 }
 
 .hero .hero-text {
-  width: 40%;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
@@ -149,7 +149,7 @@ body {
   transition: all 0.3s;
 }
 .hero-image {
-  flex: 1;
+  flex: 99;
   width: 60%;
 }
 
@@ -203,17 +203,75 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.business {
-  width: 100%;
-  min-height: 400px;
-  background-color: rgb(71, 73, 74);
-}
 
-.business p {
+.logos p {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
   padding: 4rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f2f2f2;
+}
+
+.logos{
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: whitesmoke;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to left, rgb(255, 255, 255, 0), white);
+  z-index: 2;
+}
+.logos::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to right, rgb(255, 255, 255, 0), white);
+  z-index: 2;
+}
+
+.logos-slide{
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos:hover .logos-slide{
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  from{
+      transform: translateX(0);
+  }
+  to{
+      transform: translateX(-100%);
+  }
+}
+
+.logos-slide img{
+  width: 50px;
+  height: 50px;
+  margin: 40px;
 }
 
 .logo img {
@@ -322,7 +380,7 @@ body {
   bottom: 0;
   width: 100%;
   max-height: 250px;
-  background-color: aqua;
+  background-color: whitesmoke;
   padding: 1rem 2rem;
 }
 
