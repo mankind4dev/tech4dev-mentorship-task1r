@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
       <div className="nav">
-        <img src={logo} alt="app logo" height={"50px"} width={"50px"} />
+        <img src={logo} alt="app logo" height={"100px"} width={"100px"} />
         <div className="navs">
           <Link to="/">Retal</Link>
           <Link to="sme">SME</Link>
