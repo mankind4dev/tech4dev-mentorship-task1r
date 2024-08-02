@@ -1,0 +1,101 @@
+.header h2{
+    text-align: center;
+    background-color:beige;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.container-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.cards{
+    background-color: white;
+    width: 290px;
+    height: auto;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image{
+    background-color: aqua;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+    
+}
+
+
+.car1{
+    background-image: url("../crad-hover-effect/images/porsche1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.car2{
+    background-size: cover;
+    background-image: url("../crad-hover-effect/images/porche2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.car3{
+    background-size: cover;
+    background-image: url("../crad-hover-effect/images/porche3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.car4{
+    background-size: cover;
+    background-image: url("../crad-hover-effect/images/porche4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.car5{
+    background-size: cover;
+    background-image: url("../crad-hover-effect/images/porche5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.car6{
+    background-size: cover;
+    background-image: url("../crad-hover-effect/images/porche6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cards h2{
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.cards p{
+    padding: 10px;
+}
+
+.cards a{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cards:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
