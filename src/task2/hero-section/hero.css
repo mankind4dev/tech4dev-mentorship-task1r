@@ -1,0 +1,114 @@
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-right: auto;
+  z-index: 1000;
+}
+
+.header-main-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-main-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-main-nav ul {
+  list-style: none;
+}
+
+.header-main-nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.header-main-nav ul li a:first-child {
+  margin-left: 4rem;
+}
+
+.header-main-sm {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-main-sm a {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.main-hero-section {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: #1a253a;
+  margin-top: 60px;
+  background-image: url("../hero-section/image/bg.png"),
+    url("../hero-section/image/bg2.png");
+  background-size: 70vh, cover;
+  background-position: bottom, center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-hero-section .main-intro h2 {
+  font-size: 60px;
+  line-height: 70px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.main-hero-section p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.main-hero-section a {
+  display: block;
+  background-color: #ffd700;
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.main-quotes p{
+    border-left: 4px solid pink;
+    padding-left: 20px;
+    margin: 40px 0;
+    width: fit-content;
+}
+
+.main-quotes p:nth-child(2){
+    margin-left: 100px;
+}
+
+.main-intro {
+    position: relative;
+    right: 20vh;
+}
+.main-quotes{
+    position: relative;
+    left: 5vh;
+    padding-bottom: 8vh;
+}
