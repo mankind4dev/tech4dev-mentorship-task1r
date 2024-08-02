@@ -26,13 +26,16 @@ import {
 } from "../assets/index";
 import { glance, ourService, services } from ".";
 import BestResult from "../components/BestResult";
+import Slider from "../components/Slider";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Retail({ service }) {
   const [logos, setLogos] = useState([]); // Array to store logo elements
   const logosRef = useRef(null); // Ref to the logos container element
 
   const handleDuplicate = () => {
-    const originalLogo = logosRef.current.querySelector('.logos-slide');
+    const originalLogo = logosRef.current.querySelector(".logos-slide");
     if (originalLogo) {
       const duplicateLogo = originalLogo.cloneNode(true); // Clone the logo element
       setLogos((prevLogos) => [...prevLogos, duplicateLogo]); // Add clone to logos array
@@ -41,6 +44,7 @@ export default function Retail({ service }) {
 
   return (
     <>
+    <Header />
       <div className="dream">
         <div className="hero">
           <div className="hero-text">
@@ -48,8 +52,8 @@ export default function Retail({ service }) {
               Chase Your <br /> Dream with us
             </span>
             <p className="">
-              The harder you work for something, the greater you'll feel when you
-              achieve it
+              The harder you work for something, the greater you'll feel when
+              you achieve it
             </p>
           </div>
           <div className="buttons">
@@ -128,6 +132,7 @@ export default function Retail({ service }) {
         ))}
         <button onClick={handleDuplicate}>Duplicate Logo</button>
       </div>
+
       <div className="ipdc">
         <img src={logo} alt="ipdc" />
         <div className="glance">
@@ -161,6 +166,7 @@ export default function Retail({ service }) {
         </div>
       </div>
       <BestResult />
+      <Footer />
     </>
   );
 }

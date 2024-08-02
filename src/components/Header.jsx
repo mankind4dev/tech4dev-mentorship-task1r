@@ -11,11 +11,11 @@ export default function Header() {
         <img src={logo} alt="app logo" height={"100px"} width={"100px"} />
         <div className="navs">
           <Link to="/">Retal</Link>
-          <Link to="sme">SME</Link>
+          <Link to="task2">Task-2</Link>
           <Link to="corporate">Corporate</Link>
           <Link to="aboutUs">About Us</Link>
           <Link to="covid19">Covid-19</Link>
-          <Link to="campains">Campains</Link>
+          <Link to="responsive">Responsive</Link>
         </div>
         <div className="search-service">
           <div className="toggle" onClick={() => setToggle(!toggle)}>
@@ -23,7 +23,6 @@ export default function Header() {
           </div>
           <button className="service">iSERVICE</button>
         </div>
-        
       </div>
     </>
   );

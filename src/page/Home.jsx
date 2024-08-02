@@ -61,6 +61,7 @@ export default function Home({ service }) {
           Repellat, ab laudantium!
         </p>
       </div>
+      
       <div className="service">
         {services.map((service, index) => (
           <div className="service-item" key={index}>
@@ -92,6 +93,7 @@ export default function Home({ service }) {
           </span>
         </div>
       </div>
+      
       <div className="ourService">
         <h2>Our Service</h2>
         <p>

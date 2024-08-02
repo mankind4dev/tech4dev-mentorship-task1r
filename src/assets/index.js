@@ -1,5 +1,6 @@
 
 import logo from "../assets/ipdc.png";
+import logo1 from "../assets/mankind4dev-bg.png";
 import Family from "../assets/Big.png";
 import kutral from "../assets/4kutral.png";
 import kview from "../assets/10kview.png";
@@ -16,9 +17,18 @@ import netflix from "../assets/netflix.png";
 import reachout from "../assets/reachout.png";
 import redeem from "../assets/redeem.png";
 import volkwagon from "../assets/volkwagon.png";
+import adebanke from "../assets/Ade.jpg";
+import abisola from "../assets/abisola.jpg";
+import abiola from "../assets/abiola.jpg";
+import daniel from "../assets/daniel.jpg";
+import dolapo from "../assets/dolapo.jpg";
+import temidayo from "../assets/temidayo.jpg";
+import yobright from "../assets/yobright.jpg";
+import wunmi from "../assets/wunmi.jpg";
 
 export {
-    logo,
+  logo,
+  logo1,
   Family,
   kutral,
   kview,
@@ -35,4 +45,12 @@ export {
   reachout,
   redeem,
   volkwagon,
+  adebanke,
+  abiola,
+  abisola,
+  temidayo,
+  daniel,
+  yobright,
+  wunmi,
+  dolapo
 };
