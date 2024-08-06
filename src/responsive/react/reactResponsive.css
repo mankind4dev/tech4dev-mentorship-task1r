@@ -1,0 +1,225 @@
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 3rem;
+}
+
+.nav-links-container {
+  padding: 16px 0;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links > .nav-lik-items {
+  display: inline-block;
+  margin: 0 24px;
+  position: relative;
+}
+
+.nav-links > .nav-lik-items > a {
+  text-decoration: none;
+  display: flex;
+  padding: 16px 0;
+  transition: 0.3s ease;
+  align-items: center;
+}
+.nav-links > .nav-lik-items > a:hover {
+  color: #fdd;
+}
+
+.nav-lik-items > a > svg {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-left: 8px;
+  transition: 0.3s ease;
+  cursor: none;
+}
+
+.nav-lik-items:hover > a > svg {
+  transform: rotate(-180deg);
+}
+
+.nav-links > .nav-lik-items > .dropdown-menu {
+  width: 200px;
+  position: absolute;
+  top: 80%;
+  left: -16px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transform: translateY(0);
+  transition: 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.nav-links > .nav-lik-items:hover > .dropdown-menu {
+  transform: translateY(8px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-links > .nav-lik-items > .dropdown-menu > .dropdown-menu-item {
+  list-style-type: none;
+}
+
+.nav-links > .nav-lik-items > .dropdown-menu > .dropdown-menu-item > a {
+  text-decoration: none;
+  display: block;
+  color: #7777;
+  font-weight: 500;
+  transition: 0.3s ease;
+  padding: 16px;
+}
+
+.dropdown-menu > .dropdown-menu-item > a:hover {
+  color: #fdd;
+  background-color: #2d58d927;
+}
+
+.hero-container {
+  padding: 2rem 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 22px;
+  margin-bottom: 2rem;
+}
+.hero-content p {
+  font-size: 3rem;
+  line-height: 22px;
+  margin-bottom: 2rem;
+}
+
+.hero-content button {
+  padding: 16px 24px;
+  background-color: #000;
+  border-radius: 99px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transform: 0.2 ease;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  width: fit-content;
+  margin: auto;
+}
+.hero-content button:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+.hero-image {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav-container > .open-menu{
+    display: none;
+    font-size: 24px;
+    color: #fdd700;
+}
+.nav-links-container > .close-menu{
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    width: fit-content;
+}
+
+.like {
+  color: #fdd;
+}
+
+.subscribe {
+  color: crimson;
+}
+
+@media (max-width: 992px) {
+    .nav-container{
+        padding: 0 3rem;
+    }
+
+    .nav-links-container{
+        position: absolute;
+        right: 0px;
+        visibility:  hidden;
+        top: 0;
+        width: 400px;
+        height: 100%;
+        overflow-y: auto;
+        background-color: #fdd700;
+        z-index: 999;
+        padding: 15px;
+        transition: 0.3s ease;
+    }
+    .nav-links-container > .nav-links .nav-lik-items{
+        display: block;
+        margin: 0;
+    }
+    .nav-links-container > .nav-links .nav-lik-items > a{
+        color: #fdd;
+        padding: 24pxx 16px;
+        border-bottom: 1px solid #111111;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links > .nav-lik-items > .dropdown-menu{
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        border-bottom: 1px solid #1111;
+        background-color: transparent;
+        transform: translateY(0px);
+        box-sizing: none;
+        padding: 0px;
+        left: auto;
+        overflow: hidden;
+    }
+    .nav-links > .nav-lik-items:hover > .dropdown-menu{
+        transform: translateY(0px);
+    }
+    .nav-links > .nav-lik-items > .dropdown-menu > .dropdown-menu-item > a{
+        color: #1111;
+        border: none;
+    }
+    .nav-links > .nav-lik-items > .dropdown-menu-item > a:hover{
+        color: #fff;
+    }
+    .nav-container > .open-menu{
+        cursor: pointer;
+        display: block;
+    }
+    .nav-container > .close-menu{
+        cursor: pointer;
+        display: block;
+    }
+}

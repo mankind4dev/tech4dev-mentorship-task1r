@@ -16,6 +16,8 @@ export default function Header() {
           <Link to="aboutUs">About Us</Link>
           <Link to="covid19">Covid-19</Link>
           <Link to="responsive">Responsive</Link>
+          <Link to="dropdown">Dropdown</Link>
+          <Link to="sidebar">Sidebar</Link>
         </div>
         <div className="search-service">
           <div className="toggle" onClick={() => setToggle(!toggle)}>

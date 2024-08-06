@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navbar {
+  background-color: blue;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.navbar-logo img {
+  align-items: center;
+  justify-content: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.navbar-logo2 {
+  color: rgb(182, 156, 7);
+}
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.nav-links {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+}
+.nav-links:hover {
+  background-color: rgb(182, 156, 7);
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links > svg{
+    margin-left: 0.6rem; 
+    font-size: 1.3rem;   
+}
+
+.nav-links:hover > svg {
+  transform: rotate(180deg);
+}
+
+.nav-link-mobile {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+.nav-links-mobile{
+    color: #fdd;
+    text-decoration: none;
+    border: 1px solid #fdd700;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.nav-links-mobile:hover{
+    color: #fdd700;
+    text-decoration: underline;
+}
+
+.btn {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-links svg {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 40%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .active ~ li a:nth-child(1){
+    transition-delay: .6s;
+  }
+
+
+  .nav-menu.active {
+    background-color: blue;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+ 
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    top: 80px;
+    border-bottom: 1px solid #dff700
+  }
+  .nav-links:hover {
+    background-color: #dff700;
+    border-radius: 0;
+  }
+  .navbar-logo img{
+    position:  absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 5px;
+    left: 0;
+  }
+  .menu-icon  {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 2rem;
+    cursor: pointer;
+    color: gold;
+  }
+
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background-color: gold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    border-bottom: 1rem;
+  }
+  .nav-links-mobile:hover {
+    background-color: gold;
+    color: #fff;
+    transition: 250ms;
+  }
+  button {
+    display: none;
+  }
+}
+
+.dropdown-menu {
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  list-style: none;
+  text-align: start;
+}
+.dropdown-menu li {
+  background-color: gold;
+  cursor: pointer;
+}
+.dropdown-menu li:hover {
+  background-color: blue;
+}
+.dropdown-menu.clicked {
+  display: none;
+}
+.dropdown-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 16px;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: gold;
+  background-color: blue;
+}
+
+.btn:hover {
+  padding: 6px 18px;
+  transition: all 0.3s ease-out;
+  background-color: transparent;
+  color: #333;
+  border-radius: 4px;
+  border: 2px solid gold;
+}
+ 
+
+
+/* 
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 20%;
+  background-color: blue;
+  padding: 1rem;
+}
+
+.menu-icon > svg {
+  display: none;
+  font-size: 2rem;
+  color: #fdd700;
+}
+
+.menu-icon > svg:active {
+  color: red;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu > .nav-item {
+  margin: 1rem 1.5rem;
+  list-style: none;
+}
+
+.nav-item > a {
+  color: #fdd700;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  text-decoration: none;
+}
+
+.nav-item > a:hover {
+  color: #fff;
+  background-color: #fdd700;
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+}
+
+.nav-links > svg {
+  position: relative;
+  font-size: 1.3rem;
+  margin-left: 0.6rem;
+}
+
+
+.nav-links:hover > svg {
+  transform: rotate(180deg);
+}
+
+.nav-item > .nav-links-mobile{
+  border: 1px solid #fdd700;
+  border-radius: 5px;
+}
+
+.nav-item > .nav-links-mobile:hover{
+  text-decoration: underline;
+  
+}
+
+@media screen and (max-width: 960px) {
+  .navbar{
+    
+  }
+  .nav-item{
+    position: relative;
+  }
+  .menu-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+}
+ */

@@ -9,6 +9,8 @@ import Sme from "./page/Sme";
 import Footer from "./components/Footer";
 import Navbar from "./task2/Navbar";
 import Responsive from "./responsive/Responsive";
+import Navbar2 from "./dropdown/Navbar";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route exact path="/" element={<Retail />} />
         <Route exact path="/aboutUs" element={<AboutUs />} />
         <Route exact path="/responsive" element={<Responsive />} />
+        <Route exact path="/dropdown" element={<Navbar2 />} />
         <Route exact path="/corporate" element={<Corporate />} />
         <Route exact path="/covid19" element={<Covid19 />} />
         <Route exact path="/sme" element={<Sme />} />
